@@ -10,6 +10,10 @@ module.exports =
     hideVcsIgnoredFiles: false
     hideIgnoredNames: false
     showOnRightSide: false
+    # sublimt tabs
+    permanentPaths: [
+      '.git\\COMMIT_EDITMSG'
+    ]
 
   treeView: null
 

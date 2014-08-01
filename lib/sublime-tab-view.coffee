@@ -14,6 +14,8 @@ class SublimeTabView extends TabView
        @item.constructor.name is 'ImageEditor'
       if @item.getPath() in openPermanent
         _.remove(openPermanent, @item.getPath())
+      else if atom.project?.relativize(@item.getPath()) in atom.config.get('sublime-tabs.permanentPaths')
+
       else
         @addClass('temp')
 
